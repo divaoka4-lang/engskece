@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <!-- Menggunakan Google Fonts -->
+    <link href="https://engskece.com=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #bcc4db;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #086df3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header / Banner Utama -->
+    <header>
+        <h1 id="salam">Selamat Datang Sari Sri Sukmawati!</h1>
+        <p>Ini adalah web day 1 belajar.</p>
+        <button class="btn" onclick="ubahPesan()">Klik Saya</button>
+    </header>
+
+    <!-- Bagian Konten Utama -->
+    <div class="container">
+        <h2>Tentang Website Ini</h2>
+        <p>Sari Sri Sukmawati adalah sosok wanita terhebat di muka bumi ini.</p>
+        
+        <div class="features">
+            <div class="card">
+                <h3>CANTIK</h3>
+                <p>.CIHUYYYY</p>
+            </div>
+            <div class="card">
+                <h3>BAIK</h3>
+                <p>CIHUYY LAGI.</p>
+            </div>
+            <div class="card">
+                <h3>PINNTER</h3>
+                <p>POKONYA KAKA TERCANTIK.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Website Sederhana. Dibuat dengan ❤️</p>
+    </footer>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        function ubahPesan() {
+            const judul = document.getElementById("salam");
+            judul.innerText = "Halo, Terima Kasih Sudah Diklik! 🎉";
+        }
+    </script>
+
+</body>
+</html
